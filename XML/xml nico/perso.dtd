@@ -1,0 +1,29 @@
+<!ENTITY factions "(Griffondor|Serdaigle|Poufsouffle|Serpentard)">
+<!ENTITY side  "(gentil|méchant|neutre)">
+
+<!ELEMENT xml (perso)>
+
+<!ELEMENT perso (personnaldata,faction?,side,actor,BFF*)>
+<!ATTLIST perso 
+    gender (male|female) #IMPLIED>
+
+<!ELEMENT personnaldata (name,firstname+,img)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT firstname (#PCDATA)>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+    url CDATA #REQUIRED
+    title CDATA #REQUIRED>
+
+<!ELEMENT faction (#PCDATA)>
+<!ATTLIST faction id %factions; #REQUIRED>
+
+<!ELEMENT side EMPTY>
+<!ATTLIST side id %side; #REQUIRED>
+
+<!ELEMENT actor (#PCDATA)>
+
+<!ELEMENT BFF (#PCDATA)>

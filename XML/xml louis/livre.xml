@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml SYSTEM "norme_livre.dtd">
+<xml>
+      <book>
+            <spec>
+                  <title>Harry Potter à l'école des sorciers</title>
+                  <author>J.K. Rowling</author>
+                  <date>26 juin 1997</date>
+                  <editor>
+                        <house>Bloomsbury</house>
+                  </editor>
+            </spec>
+            <description>
+                  Harry Potter est un garçon ordinaire. 
+                  Mais, le jour de ses onze ans, son existence bascule : 
+                  un géant vient le chercher pour l'emmener dans une école de sorciers. 
+                  Voler à cheval sur des balais, jeter des sorts, 
+                  combattre les Trolls : 
+                  Harry Potter se révèle être un sorcier vraiment doué.
+            </description>
+      </book>
+</xml>

@@ -1,0 +1,22 @@
+<!ENTITY tome "(1|2|3|4|5|6|7)">
+
+<!ELEMENT book (spec, description)>
+
+<!ELEMENT spec (title, author, date, editor*)>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+	id ID #REQUIRED
+	tome %tome; #REQUIRED>
+
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT editor (house, collection, img?)>
+
+<!ELEMENT house (#PCDATA)>
+<!ELEMENT collection (#PCDATA)>
+
+<!ELEMENT description (#PCDATA | img)*>
+
+<!ELEMENT img (#EMPTY)>
+<!ATTLIST img src #CDATA #REQUIRED>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml SYSTEM "perso.dtd">
+<xml>
+    <perso gender="male">
+        <personnaldata>
+            <name>Potter</name>
+            <firstname>Harry</firstname>
+            <img url="harry_potter.jpg" title="harry potter jeune"/>
+        </personnaldata>
+        <faction id="Griffondor">Griffondor</faction>
+        <side id="gentil"/>
+        <actor>Daniel Radcliffe</actor>
+        <BFF>Hermione Granger</BFF>
+        <BFF>Ron Weasley</BFF>
+    </perso>
+</xml>
