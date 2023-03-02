@@ -74,10 +74,10 @@ header{
     flex-direction: column;
 }
 
-/* onglet livre,perso,film */
-.book img{
+/* onglet livre*/
+.bookimg{
     width:400px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .part{
     border-radius: 15px;
