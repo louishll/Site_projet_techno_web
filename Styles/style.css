@@ -17,6 +17,22 @@ header{
     margin: 0%;
 }
 
+h1 {
+    font-family: Harry Potter, Arial;
+    transition:all 0.1s ;
+    font-size: 35px;
+  }
+
+header h1:focus, h1:hover {
+    color: white;
+    text-shadow:
+    2px 3px 0 red,
+    4px 4px 0 green,  
+    6px 5px 0 blue,
+    8px  6px 0 yellow,
+    10px 7px 0 black;
+}
+
 
 
 /* menu de navigation */
@@ -47,7 +63,8 @@ header{
     text-decoration: none;        
     border-radius: 10px;          
     transition: 0.4s;
-}
+    font-size: 25px;
+    }
 .menu a>img{
     padding: 5px;
 }
