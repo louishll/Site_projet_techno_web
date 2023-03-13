@@ -2,4 +2,4 @@
 Projet html/css/js techno web création d'un site
 
 louis : film, perso
-nico : accueuil, livre
+nico : accueil, livre
