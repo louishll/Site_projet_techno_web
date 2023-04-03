@@ -4,16 +4,17 @@
         <title>SITE BOUILLON HOLLE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../Styles/style.css" href="../../Images/logo.png"/>
+        <link  id="theme" rel="stylesheet" href="../../Styles/style.css" href="../../Images/logo.png"/>
         <link rel="icon" type="image" href="../../Images/logo.png"/>
         <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
         <link rel="stylesheet" href="https://kit.fontawesome.com/bdd451d407.css" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/bdd451d407.js" crossorigin="anonymous"></script>
+        <script src="../../JS/script.js" ></script>
     </head>
-    <body>
+    <body onload="initstyle()">
         <header>
-            <h1>Collection Harry Potter</h1>
+            <h1>Collection Harry Potter </h1>
             <nav>
                 <ul class="menu">
                     <li><a href="index.html"><i class="fa-solid fa-home"></i></i>Accueil</a></li>
@@ -22,6 +23,10 @@
                     <li><a href="chara.html"><i class="fa-solid fa-users"></i>Personnages</a></li>
                 </ul>
             </nav>
+            <label class="switch">
+                <input id="switch" type="checkbox" value="false" onclick="switchtheme()">
+                <span class="slider"></span>
+              </label>
         </header>
 
         <container class="main">
@@ -199,6 +204,22 @@
                     </div>       
                   </div>
 
+            </div>
+
+            <div class="quiz">
+
+                <h2>QUIZ</h2>
+                <p>Savez vous comment s'apelle le dernier livre harry-potter qui est sorti ? </br>
+                    C'est un livre déstiné à être joué au théatre sorti en 2016.
+                </p>
+                <div class="quizfstrow">
+                    <button class="answer" onclick="wronganswer()">Harry Potter et le monde magique</button>
+                    <button class="answer" onclick="wronganswer()">Harry Potter et le chauffeur de moldus</button>
+                </div>
+                <div class="quizlstrow">
+                    <button class="answer" onclick="goodanswer()">Harry Potter et l'enfant maudit</button>
+                    <button class="answer" onclick="wronganswer()">Harry Potter et le cabaret du désir</button>
+                </div>
             </div>
             
         </container>

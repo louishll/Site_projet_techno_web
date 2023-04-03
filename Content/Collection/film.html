@@ -4,14 +4,15 @@
         <title>SITE BOUILLON HOLLE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../Styles/style.css">
+        <link id="theme" rel="stylesheet" href="../../Styles/style.css" href="../../Images/logo.png"/>
         <link rel="icon" type="image" href="../../Images/logo.png"/>
         <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/bdd451d407.css" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/bdd451d407.js" crossorigin="anonymous"></script>
-
+        <script src="../../JS/script.js" ></script>
     </head>
-    <body>
+    <body onload="initstyle()">
         <header>
             <h1>Collection Harry Potter</h1>
             <nav>
@@ -22,11 +23,218 @@
                     <li><a href="chara.html"><i class="fa-solid fa-users"></i>Personnages</a></li>
                 </ul>
             </nav>
+            <label class="switch">
+                <input id="switch" type="checkbox" value="false" onclick="switchtheme()">
+                <span class="slider"></span>
+              </label>
         </header>
 
-        
+        <container class="main">
+            <div class="first-row">
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film1.jpg"/>
+                    <h3>Harry Potter à l'école des Sorciers</h3>
+                    <p><strong>Réalisateur : </strong>Chris Columbus</p>
+                    <p><strong>Date de sortie : </strong>2001</p>
+                    <p><strong>Durée : </strong>152 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Harry Potter, jeune orphelin, a été élevé par son oncle et sa tante dans des conditions hostiles1. À l'âge de onze ans, 
+                        un demi-géant nommé Rubeus Hagrid lui apprend qu'il possède des pouvoirs magiques1 et que ses parents ont été assassinés, 
+                        des années auparavant, par le mage noir Lord Voldemort. Ce dernier avait également essayé de tuer Harry alors qu'il était un bébé, 
+                        mais le sort a rebondi. En fréquentant pour la première fois le monde des sorciers, 
+                        accompagné par Hagrid, Harry découvre qu'il y est très célèbre. Il entame sa première année d'études à l'école de sorcellerie Poudlard, 
+                        où il apprend à maîtriser la magie aux côtés de ses deux nouveaux amis Ron Weasley et Hermione Granger. 
+                        Au cours de l'année, le trio se trouve impliqué dans le mystère de la pierre philosophale, 
+                        gardée au sein de l'école et convoitée par un inconnu qu'ils cherchent à démasquer. 
+                        Ce dernier se révèle être Voldemort, qui habite le corps du professeur Quirell.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film2.jpg"/>
+                    <h3>Harry Potter et la Chambre des Secrets</h3>
+                    <p><strong>Réalisateur : </strong>Chris Columbus</p>
+                    <p><strong>Date de sortie : </strong>2002</p>
+                    <p><strong>Durée : </strong>161 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Alors que l'oncle Vernon, la tante Pétunia et son cousin Dudley reçoivent d'importants invités à dîner, 
+                        Harry Potter est contraint de passer la soirée dans sa chambre. Dobby, 
+                        un elfe, fait alors son apparition. Il lui annonce que de terribles dangers menacent l'école de Poudlard et qu'il 
+                        ne doit pas y retourner en septembre. Harry refuse de le croire. Mais sitôt la rentrée des classes effectuée, 
+                        ce dernier se met à entendre une voix macabre. De plus, un message peint en rouge sang sur un des murs du château 
+                        annonce que la redoutable et légendaire Chambre des secrets est à nouveau ouverte, permettant ainsi à l'héritier 
+                        de Serpentard de semer le chaos à Poudlard. Les victimes, retrouvées pétrifiées par une force mystérieuse, 
+                        se succèdent dans les couloirs de l'école, sans que les professeurs - pas même le populaire Gilderoy Lockhart - 
+                        ne parviennent à endiguer la menace. Aidé de Ron et Hermione, Harry doit agir au plus vite pour sauver Poudlard.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film3.jpg"/>
+                    <h3>Harry Potter et le Prisonnier d'Azkaban</h3>
+                        <p><strong>Réalisateur : </strong>Alfonso Cuaròn</p>
+                        <p><strong>Date de sortie : </strong>2004</p>
+                        <p><strong>Durée : </strong>142 minutes</p>
+                        <p class="description">
+                            <strong>Résumé : </strong>
+                            Harry et ses amis font la connaissance du nouveau professeur de défense contre les forces du Mal, Remus Lupin, qui se montre 
+                            compétent et attentif. Alors que le monde sorcier prend connaissance de l'évasion de Sirius Black, condamné 
+                            pour meurtre, la sécurité de l'école est renforcée par l'arrivée de détraqueurs, d'effroyables créatures 
+                            gardiennes de la prison d'Azkaban. Harry en apprend plus sur son histoire et son lien avec le prisonnier échappé.
+                        </p>
+                        <div class="button">
+                            <button class="logo_button wiki">
+                                <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                            </button >
+                            <button class="logo_button amz">
+                                <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film4.jpg"/>
+                    <h3>Harry Potter et la Coupe de Feu</h3>
+                    <p><strong>Réalisateur : </strong>Mike Newell</p>
+                    <p><strong>Date de sortie : </strong>2005</p>
+                    <p><strong>Durée : </strong>157 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Au cours de l'été précédant la quatrième rentrée scolaire de Harry, la marque des ténèbres, 
+                        signe de ralliement du mage noir Voldemort, apparaît dans le ciel après 
+                        qu'une attaque de mangemorts a perturbé la Coupe du monde de quidditch. L'école Poudlard accueille pour sa part 
+                        un nouveau professeur de défense contre les forces du Mal (Alastor Maugrey, dit « Fol-Œil ») et un évènement 
+                        légendaire, le Tournoi des Trois Sorciers. Trois écoles de magie européennes font participer leur « champion » 
+                        au tournoi. La coupe de feu désigne Harry comme quatrième candidat aux côtés de Fleur Delacour, Viktor Krum et 
+                        Cedric Diggory. En tant que quatrième champion, il doit lui aussi affronter des épreuves au péril de sa vie pour 
+                        remporter le trophée des trois sorciers. Le film se termine par le retour de Voldemort, qui regagne sa puissance
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film5.jpg"/>
+                    <h3>Harry Potter et l'Ordre du Phénix</h3>
+                    <p><strong>Réalisateur : </strong>David Yates</p>
+                    <p><strong>Date de sortie : </strong>2007</p>
+                    <p><strong>Durée : </strong>138 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Alors qu'il entame une cinquième année d'études à Poudlard, Harry Potter découvre que la majorité des 
+                        sorciers ne semble pas croire au retour de Voldemort survenu à la fin de l'année précédente, convaincue par une 
+                        campagne de désinformation dirigée par Cornelius Fudge, le ministre de la Magie1. Celui-ci impose Dolores Ombrage 
+                        comme nouveau professeur de défense contre les forces du Mal à l'école afin de maintenir l'ordre et de surveiller les 
+                        agissements d'Albus Dumbledore1. Ombrage est chargée de dispenser uniquement des cours théoriques aux élèves et 
+                        semble s'en prendre particulièrement à Harry, qui reste ferme sur ses convictions1. Certains élèves de l'école, 
+                        menés par Harry, Ron et Hermione, forment un club de défense secret, l'Armée de Dumbledore, pour 
+                        s'entraîner au combat et faire écho à l'ordre du Phénix, face au ministère de la Magie corrompu et aux mangemorts.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film6.jpg"/>
+                    <h3>Harry Potter et le Prince de Sang-Mélé</h3>
+                    <p><strong>Réalisateur : </strong>David Yates</p>
+                    <p><strong>Date de sortie : </strong>2009</p>
+                    <p><strong>Durée : </strong>153 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Après la bataille au Département des Mystères survenue quelques semaines auparavant, le ministère de la magie a rendu 
+                        public le retour de Voldemort. Le mage noir et ses disciples exercent désormais leur pouvoir sur le monde entier. 
+                        Sorciers comme Moldus sont maintenant en danger. Des mangemorts apparaissent à Londres et provoquent l'effondrement 
+                        du Millennium Bridge, tout en kidnappant au passage le fabricant de baguettes, Ollivander. Durant l'été, Harry, 
+                        qui vient de fêter son seizième anniversaire, rencontre Albus Dumbledore dans une gare. Le vieux directeur, avec 
+                        l'aide de Harry, veut essayer de convaincre un ancien professeur de l'école, Horace Slughorn, de reprendre sa place 
+                        à Poudlard. Slughorn accepte. Après cela, Harry se rend au Terrier, chez les Weasley, et retrouve Ron et Hermione.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film7.1.jpg"/>
+                    <h3>Harry Potter et les Reliques de la Mort <em>[pt 1]</em></h3>
+                    <p><strong>Réalisateur : </strong>David Yates</p>
+                    <p><strong>Date de sortie : </strong>2010</p>
+                    <p><strong>Durée : </strong>146 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Le pouvoir de Voldemort s'étend. Celui-ci contrôle maintenant le Ministère de la Magie et Poudlard. Harry, Ron et 
+                        Hermione décident de terminer le travail commencé par Dumbledore, et de retrouver les derniers Horcruxes pour vaincre 
+                        le Seigneur des Ténèbres. Mais il reste bien peu d'espoir aux trois sorciers, qui doivent réussir à tout prix.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+                <div class="film">
+                    <img class="filmimg" src="../../Images/films/film7.2.jpg"/>
+                    <h3>Harry Potter et les Reliques de la Mort <em>[pt 2]</em></h3>
+                    <p><strong>Réalisateur : </strong>David Yates</p>
+                    <p><strong>Date de sortie : </strong>2011</p>
+                    <p><strong>Durée : </strong>130 minutes</p>
+                    <p class="description">
+                        <strong>Résumé : </strong>
+                        Dans la 2e Partie de cet épisode final, le combat entre les puissances du bien et du mal de 
+                        l'univers des sorciers se transforme en guerre sans merci. 
+                        Les enjeux n'ont jamais été si considérables et personne n'est en sécurité. Mais c'est 
+                        Harry Potter qui peut être appelé pour l'ultime sacrifice alors que se rapproche l'ultime épreuve de force avec Voldemort.
+                    </p>
+                    <div class="button">
+                        <button class="logo_button wiki">
+                            <a href="https://fr.wikipedia.org/wiki/Harry_Potter_et_la_Chambre_des_secrets" target="_blank"><i class="fa-solid fa-w"></i></a>             
+                        </button >
+                        <button class="logo_button amz">
+                            <a href="https://www.amazon.fr/Harry-Potter-II-Chambre-Secrets/dp/207058464X/ref=pd_bxgy_img_sccl_1/258-2274139-2244813?pd_rd_w=70nFU&content-id=amzn1.sym.3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_p=3e903e31-26aa-46b7-bc9c-c2062226ae30&pf_rd_r=7XNCCYJCDDW4W65665NK&pd_rd_wg=A3pK7&pd_rd_r=4a505213-591b-4531-b19f-17dcb3ec9bef&pd_rd_i=207058464X&psc=1" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>  
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <footer>
+            BOUILLON Nicolas & HOLLE Louis - 2023 Copyright &copy;
+        </footer>
     </body>
-    <footer>
-        BOUILLON Nicolas & HOLLE Louis - 2023 Copyright &copy;
-    </footer>
 </html>

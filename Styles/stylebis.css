@@ -3,12 +3,19 @@
 #222F5B
 #5D5D5D
 #946B2D
+
  */
+ /* COULEUR INVERSE
+ #f1e5bf
+ #ddd0a4
+ #a2a2a2
+ #6b94d2
+  */
 
 /* SITE GLOBAL */
 
 html{
-    background-color: #222F5B ;
+    background-color: #F1F1F1 ;
     /* text-align: justify; */
     font-family: 'Oswald','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -25,7 +32,7 @@ header{
 }
 
 h1{
-    color: #FFF;
+    color: #000;
     font-size: 4vw;
     text-align: center;
     padding: 0.3vw;
@@ -62,22 +69,22 @@ nav{
     justify-content:center;            
     margin: 0.3vw;               
     padding: 0.3vw;               
-    color: #FFF;                  
+    color: #000;                  
     text-decoration: none;        
     border-radius:5px;          
     transition: 0.4s;
 }
 .menu a> i{
-    color: #FFF;
+    color: #000;
     padding: 0.4vw;
 }
 
 .menu a:hover i{
-    color: #222F5B;}
+    color: #F1F1F1;}
 
 .menu a:hover{
-  background-color: #FFF;
-  color: #222F5B;
+  background-color: #222222;
+  color: #F1F1F1;
 }
 
 /* TOGGLE SWITCH THEME */
@@ -219,7 +226,7 @@ nav{
 #submit{
     width: 7vw;
     height: 3vw;
-    background-color: #222F5B;
+    background-color: #0E1A40;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -279,7 +286,7 @@ a{
     flex-direction: column;
     padding: 0.5vw;
     margin: 0.3vw ;
-    border: solid #000 4px;
+    border: solid #0E1A40 4px;
     border-radius: 10px;
 }
 
@@ -329,7 +336,7 @@ a{
 .quiz{
     display: flex;
     background-color: #c9d3dc;
-    border: #000 solid 4px;
+    border: #0E1A40 solid 4px;
     border-radius: 10px;
     text-align: center;
     flex-direction: column ;
@@ -355,6 +362,6 @@ a{
 /* footer */
 footer{
     font-size: 1vw;
-    color: #FFF;
+    color: #000;
     margin-left: 10px;
 }

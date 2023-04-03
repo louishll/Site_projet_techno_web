@@ -4,14 +4,15 @@
         <title>SITE BOUILLON HOLLE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../Styles/style.css">
+        <link id="theme" rel="stylesheet" href="../../Styles/style.css" href="../../Images/logo.png"/>
         <link rel="icon" type="image" href="../../Images/logo.png"/>
         <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/bdd451d407.css" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/bdd451d407.js" crossorigin="anonymous"></script>
-
+        <script src="../../JS/script.js" ></script>
     </head>
-    <body>
+    <body onload="initstyle()">
         <header>
             <h1>Collection Harry Potter</h1>
             <nav>
@@ -22,11 +23,132 @@
                     <li><a href="chara.html"><i class="fa-solid fa-users"></i>Personnages</a></li>
                 </ul>
             </nav>
+            <label class="switch">
+                <input id="switch" type="checkbox" value="false" onclick="switchtheme()">
+                <span class="slider"></span>
+              </label>
         </header>
 
-       
+        <container class="main">
+            <div class="first-row">
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/harry_potter.jpg"/>
+                    <h3>Harry Potter</h3>
+                    <p><strong>Maison : </strong>Griffondor</p>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Acteur : </strong>Daniel Radcliffe</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Ron Wisley</li>
+                            <li>Hermione Granger</li>
+                            <li>Dumbledore</li>
+                            <li>Hagrid</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Voldemort.png"/>
+                    <h3>Voldemort</h3>
+                    <p><strong>Maison : </strong>Serpentard</p>
+                    <p><strong>Coté : </strong>Méchant</p>
+                    <p><strong>Acteur : </strong>Ralph Fiennes</p>
+                </div>
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/hermione_granger.jpg"/>
+                    <h3>hermione Granger</h3>
+                    <p><strong>Maison : </strong>Griffondor</p>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Actrice : </strong>Emma Watson</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Harry Potter</li>
+                            <li>Ron Weasley</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Ron_Weasley.jpg"/>
+                    <h3>Ronald Weasley</h3>
+                    <p><strong>Maison : </strong>Griffondor</p>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Acteur : </strong>Rupert Grint</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Hermione Granger</li>
+                            <li>Harry Potter</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Albus_Dumbledore.jpg"/>
+                    <h3>Albus Dumbledore</h3>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Acteur : </strong>Richard Harris</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Proffesseur McGonagall</li>
+                            <li>Harry Potter</li>
+                            <li>Hagrid</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Proffesseur_McGonagall.jpg"/>
+                    <h3>Proffesseur McGonagall</h3>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Actrice : </strong>Maggie Smith</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Albus Dumbledore</li>
+                            <li>Proffesseur Rogue</li>
+                            <li>Hagrid</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Hagrid.png"/>
+                    <h3>Hagrid</h3>
+                    <p><strong>Coté : </strong>Gentil</p>
+                    <p><strong>Acteur : </strong>Robbie Coltrane</p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Harry Potter</li>
+                            <li>Dumbledore</li>
+                            <li>Hermione Granger</li>
+                            <li>Ronald Wisley</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="charac">
+                    <img class="characimg" src="../../Images/perso/Draco_Malfoy.jpg"/>
+                    <h3>Drago Malfoy</h3>
+                    <p><strong>Maison : </strong>Serpentard</p>
+                    <p><strong>Coté : </strong>Instable</p>
+                    <p><strong>Acteur : </strong></p>
+                    <p>
+                        <strong>Amis proches : </strong>
+                        <ul>
+                            <li>Vincent Crabbe</li>
+                            <li>Gregory Goyle</li>
+                            <li>Pansy Parkinson</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>    
+        </container>
     </body>
     <footer>
         BOUILLON Nicolas & HOLLE Louis - 2023 Copyright &copy;
     </footer>
+    </body>
 </html>
