@@ -332,25 +332,39 @@ a{
 /* QUIZ */
 .quiz h2{
     font-family: 'Harry Potter';
+    font-size: 5vw;
 }
 .quiz{
-    display: flex;
-    background-color: #c9d3dc;
-    border: #0E1A40 solid 4px;
-    border-radius: 10px;
+    width: 62vw;
+    display:flex ;
+    align-items:center ;
+    justify-content:space-around;
+    flex-direction: column;
     text-align: center;
-    flex-direction: column ;
+    padding: 0.5vw;
+    margin: 0.3vw ;
+    border: solid #000 4px;
+    border-radius: 10px;
+    background-color: #c9d3dc; 
     font-size: 1.4vw;
+}
+.quiz p{
+    font-family: poppins;
+    font-weight:600;
+    font-size: 1.6vw;
+    padding:0.4vw;
+    border-radius: 10px;    
 }
 
 .answer{
+    font-family: poppins;
     border: solid 2px #0E1A40;
     background-color: #5667a0;
     border-radius: 10px;
-    width: 49%;
+    width: 99%;
     height:7vw;
-    font-size: 1.5vw;
-    font-family: Helvetica, Arial, sans-serif ;
+    font-size: 1.6vw;
+    font-weight:400;
     margin: 0.1vw;
     padding: 0.1vw;
 }
